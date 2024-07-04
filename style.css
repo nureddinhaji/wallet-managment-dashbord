@@ -17,7 +17,9 @@ ul, ol {
 html {
     font-size: 10px;
 }
-
+button {
+    background-color: transparent;
+}
 
 /* Variables */
 :root {
@@ -33,6 +35,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
     background-color: var(--color-blue-gray);
+    display: flex;
 }
 
 /* Sidebar Style */
@@ -82,3 +85,61 @@ body {
     fill: white;
 }
 
+/* Maind Dashbord Window */
+.main {
+    flex: 1;
+    padding: 3rem;
+}
+
+/* Header Style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white;
+}
+.header__search {
+    position: relative;
+}
+.header__input {
+    width: 45rem;
+    border-radius: 0.8rem;
+    background-color: var(--color-dark-blue);
+    color: white;
+    padding: 1rem 5rem 1rem 2rem;
+}
+.header__search-button {
+    position: absolute;
+    inset-inline-end: 2rem;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.header__control {
+    display: flex;
+    gap: 3rem;
+}
+.header__notification-button {
+    width: 4.4rem;
+    height: 4.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-blue);
+    border-radius: 0.8rem;
+}
+.header__user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
