@@ -1,0 +1,84 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+html {
+    font-size: 10px;
+}
+
+
+/* Variables */
+:root {
+    --color-blue: #3A6FF8;
+    --color-dark-blue: #1B2028;
+    --color-blue-gray: #31353F;
+    --color-gray: #9E9E9E;
+    --transation-time: 0.3s;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    background-color: var(--color-blue-gray);
+}
+
+/* Sidebar Style */
+.sidebar {
+    width: 25.6rem;
+    background-color: var(--color-dark-blue);
+    min-height: 100vh;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    color: var(--color-gray);
+}
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sidebar__link {
+    display: flex;
+    gap: 2rem;
+    height: 5rem;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 1rem;
+    transition: var(--transation-time);
+}
+.sidebar__link--active,
+.sidebar__link:hover,
+.sidebar__link:active {
+    background-color: var(--color-blue);
+    color: white;
+}
+.sidebar__link svg {
+    fill: var(--color-gray);
+}
+.sidebar__link--active svg,
+.sidebar__link:hover svg,
+.sidebar__link:active svg{
+    fill: white;
+}
+
