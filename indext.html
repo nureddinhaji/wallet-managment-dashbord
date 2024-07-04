@@ -14,6 +14,49 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <!-- SVG Icons -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="bitcoin" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M14.97 12.75H9.53v2.83H14.97c.95 0 1.73-.64 1.73-1.42 0-.78-.78-1.41-1.73-1.41Z"
+                    fill="#FFC01E"
+                />
+                <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm2.97 15.08h-1.65v1.42c0 .41-.34.75-.75.75a.76.76 0 0 1-.75-.75v-1.42h-1.21v1.42c0 .41-.34.75-.75.75a.76.76 0 0 1-.75-.75v-1.42H7.05a.76.76 0 0 1-.75-.75c0-.41.34-.75.75-.75h.98V8.42h-.98a.76.76 0 0 1-.75-.75c0-.41.34-.75.75-.75h2.06V5.5c0-.41.34-.75.75-.75s.75.34.75.75v1.42h1.21V5.5c0-.41.34-.75.75-.75s.75.34.75.75v1.42h.88a3 3 0 0 1 2.92 2.92c0 .67-.24 1.28-.62 1.78a2.88 2.88 0 0 1 1.7 2.56c0 1.59-1.45 2.9-3.23 2.9Z"
+                    fill="#FFC01E"
+                />
+                <path
+                    d="M15.62 9.83c0-.66-.62-1.42-1.42-1.42H9.53v2.83h4.67c.78.01 1.42-.63 1.42-1.41Z"
+                    fill="#FFC01E"
+                />
+            </symbol>
+            <symbol id="arrow-increase" viewbox="0 0 12 6" fill="none">
+                <path
+                    d="M11.01 4.485 8.601 2.077 7.132.6a1.598 1.598 0 0 0-2.258 0L.99 4.485c-.51.51-.142 1.38.57 1.38H10.44c.72 0 1.08-.87.57-1.38Z" fill="#1ECB4F"
+                />
+            </symbol>
+            <symbol id="arrow-decrease" viewbox="0 0 12 6" fill="none">
+                <path d="M1 1.5 3.4 4l1.5 1.5c.6.6 1.6.6 2.2 0l4-3.9a.8.8 0 0 0-.7-1.4H1.6C.8.1.5 1.1 1 1.5Z" fill="#F46D22"/>
+            </symbol>
+            <symbol id="litecoin" viewbox="0 0 24 24" fill="none">
+                <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm3.8 14.3c0 .5-.5.8-1 .8H9.3a1 1 0 0 1-1-1.2l.9-3-1.7.4h-.2a.7.7 0 0 1-.1-1.5l2.4-.5L11 6.7c0-.2.2-.3.4-.3h1.4a1 1 0 0 1 1 1.2l-.8 3 1.9-.3a.7.7 0 1 1 .3 1.4l-2.7.6-.5 2h3c.6 0 1 .6 1 1.2l-.2.8Z"
+                    fill="#64CFF9"
+                />
+            </symbol>
+            <symbol id="ethereum" viewbox="0 0 24 24" fill="none">
+                <path
+                    d="m8.8 14.4 1.6.8a4 4 0 0 0 3.2 0l1.6-.8c1.5-.6 2.8 1.1 1.8 2.3L13.6 21c-.9 1-2.3 1-3.1 0L7 16.7c-1-1.2.3-3 1.8-2.3ZM8.6 11.7c-.3.2-.3.7 0 .8l2.4 1.2c.5.3 1.4.3 2 0l2.3-1.2c.4-.2.4-.6.1-.8l-3.1-2.4a.5.5 0 0 0-.6 0l-3.1 2.4ZM17.9 8.2 13.7 3l-.3-.2c-.2-.3-.6 0-.6.3v4.3c0 .2 0 .3.2.4l4.2 3.1.1.2h.6c.7-.8.7-2 0-2.9ZM6.1 8.3l4.2-5.2.2-.3c.3-.3.6 0 .6.3v4.4c0 .1 0 .3-.2.4L7 11h-.3c-.1.2-.4.2-.6 0-.6-.7-.6-1.8.1-2.8Z"
+                    fill="#3A6FF8"
+                />
+            </symbol>
+            <symbol id="solana" viewbox="0 0 24 24" fill="none">
+                <path
+                    d="M20 3.5H5.5a1 1 0 0 0-.8.4l-1.5 2A1 1 0 0 0 4 7.5h14.5c.3 0 .6-.2.8-.4l1.5-2a1 1 0 0 0-.8-1.6ZM4 10h14.5c.3 0 .6.2.8.4l1.5 2A1 1 0 0 1 20 14H5.5a1 1 0 0 1-.8-.4l-1.5-2A1 1 0 0 1 4 10ZM20 16.5H5.5a1 1 0 0 0-.8.4l-1.5 2a1 1 0 0 0 .8 1.6h14.5c.3 0 .6-.1.8-.4l1.5-2a1 1 0 0 0-.8-1.6Z"
+                    fill="#1ECB4F"
+                />
+            </symbol>
+        </svg>
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="sidebar__logo">
@@ -190,19 +233,208 @@
             <header class="header">
                 <h1 class="header__title">Dashboard</h1>
                 <form class="header__search">
-                    <input class="header__input" placeholder="Search..." type="search" name="search" id="search">
-                    <button class="header__search-button" type="submit"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5 21.75c-5.65 0-10.25-4.6-10.25-10.25S5.85 1.25 11.5 1.25s10.25 4.6 10.25 10.25-4.6 10.25-10.25 10.25Zm0-19c-4.83 0-8.75 3.93-8.75 8.75s3.92 8.75 8.75 8.75 8.75-3.93 8.75-8.75-3.92-8.75-8.75-8.75ZM22 22.75c-.19 0-.38-.07-.53-.22l-2-2a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l2 2c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22Z" fill="#9E9E9E"/></svg></button>
+                    <input
+                        class="header__input"
+                        placeholder="Search..."
+                        type="search"
+                        name="search"
+                        id="search"
+                    />
+                    <button class="header__search-button" type="submit">
+                        <svg
+                            width="24"
+                            height="24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M11.5 21.75c-5.65 0-10.25-4.6-10.25-10.25S5.85 1.25 11.5 1.25s10.25 4.6 10.25 10.25-4.6 10.25-10.25 10.25Zm0-19c-4.83 0-8.75 3.93-8.75 8.75s3.92 8.75 8.75 8.75 8.75-3.93 8.75-8.75-3.92-8.75-8.75-8.75ZM22 22.75c-.19 0-.38-.07-.53-.22l-2-2a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l2 2c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22Z"
+                                fill="#9E9E9E"
+                            />
+                        </svg>
+                    </button>
                 </form>
                 <div class="header__control">
-                    <button class="header__notification-button"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0199 20.53c-2.33 0-4.66-.37-6.87-1.11-.84-.29-1.48-.88-1.76-1.65-.29-.77-.19-1.62.27-2.38l1.15-1.91c.24-.4.46-1.2.46-1.67V8.92c0-3.72 3.03-6.75 6.75-6.75s6.75 3.03 6.75 6.75v2.89c0 .46.22 1.27.46 1.68l1.14 1.9c.43.72.51 1.59.22 2.38-.29.79-.92 1.39-1.71 1.65-2.2.74-4.53 1.11-6.86 1.11Zm0-16.86c-2.89 0-5.25 2.35-5.25 5.25v2.89c0 .73-.3 1.81-.67 2.44l-1.15 1.91c-.22.37-.28.76-.15 1.09.12.34.42.6.83.74 4.18 1.4 8.61 1.4 12.79 0 .36-.12.64-.39.77-.75s.1-.75-.1-1.08l-1.15-1.91c-.38-.65-.67-1.72-.67-2.45V8.92c0-2.9-2.35-5.25-5.25-5.25Z" fill="#9E9E9E"/><path d="M13.8801 3.94c-.07 0-.14-.01-.21-.03-.29-.08-.57-.14-.84-.18-.85-.11-1.67-.05-2.44.18-.28.09-.58 0-.77-.21-.19-.21-.25-.51-.14-.78.41-1.05 1.41-1.74 2.55-1.74s2.14.68 2.55 1.74c.1.27.05.57-.14.78-.15.16-.36.24-.56.24ZM12.02 22.81c-.99 0-1.95-.4-2.65-1.1-.7-.7-1.1-1.66-1.1-2.65h1.5c0 .59.24 1.17.66 1.59.42.42 1 .66 1.59.66 1.24 0 2.25-1.01 2.25-2.25h1.5c0 2.07-1.68 3.75-3.75 3.75Z" fill="#9E9E9E"/><circle cx="17" cy="5" r="2.5" fill="#F46D22" stroke="#fff"/></svg></button>
+                    <button class="header__notification-button">
+                        <svg
+                            width="24"
+                            height="24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M12.0199 20.53c-2.33 0-4.66-.37-6.87-1.11-.84-.29-1.48-.88-1.76-1.65-.29-.77-.19-1.62.27-2.38l1.15-1.91c.24-.4.46-1.2.46-1.67V8.92c0-3.72 3.03-6.75 6.75-6.75s6.75 3.03 6.75 6.75v2.89c0 .46.22 1.27.46 1.68l1.14 1.9c.43.72.51 1.59.22 2.38-.29.79-.92 1.39-1.71 1.65-2.2.74-4.53 1.11-6.86 1.11Zm0-16.86c-2.89 0-5.25 2.35-5.25 5.25v2.89c0 .73-.3 1.81-.67 2.44l-1.15 1.91c-.22.37-.28.76-.15 1.09.12.34.42.6.83.74 4.18 1.4 8.61 1.4 12.79 0 .36-.12.64-.39.77-.75s.1-.75-.1-1.08l-1.15-1.91c-.38-.65-.67-1.72-.67-2.45V8.92c0-2.9-2.35-5.25-5.25-5.25Z"
+                                fill="#9E9E9E"
+                            />
+                            <path
+                                d="M13.8801 3.94c-.07 0-.14-.01-.21-.03-.29-.08-.57-.14-.84-.18-.85-.11-1.67-.05-2.44.18-.28.09-.58 0-.77-.21-.19-.21-.25-.51-.14-.78.41-1.05 1.41-1.74 2.55-1.74s2.14.68 2.55 1.74c.1.27.05.57-.14.78-.15.16-.36.24-.56.24ZM12.02 22.81c-.99 0-1.95-.4-2.65-1.1-.7-.7-1.1-1.66-1.1-2.65h1.5c0 .59.24 1.17.66 1.59.42.42 1 .66 1.59.66 1.24 0 2.25-1.01 2.25-2.25h1.5c0 2.07-1.68 3.75-3.75 3.75Z"
+                                fill="#9E9E9E"
+                            />
+                            <circle
+                                cx="17"
+                                cy="5"
+                                r="2.5"
+                                fill="#F46D22"
+                                stroke="#fff"
+                            />
+                        </svg>
+                    </button>
                     <div class="header__user">
-                        <img src="/images/user.png" alt="User Image" class="header__image">
+                        <img
+                            src="/images/user.png"
+                            alt="User Image"
+                            class="header__image"
+                        />
                         <span class="header__user-name">Courtney Henry</span>
-                        <svg class="header__arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 5.91a.74.74 0 0 1-.53-.22L.94 2.16a.75.75 0 0 1 0-1.06.75.75 0 0 1 1.06 0l3 3 3-3a.75.75 0 0 1 1.06 0c.29.29.29.77 0 1.06L5.53 5.69a.74.74 0 0 1-.53.22Z" fill="#9E9E9E"/></svg>
+                        <svg
+                            class="header__arrow"
+                            width="10"
+                            height="6"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M5 5.91a.74.74 0 0 1-.53-.22L.94 2.16a.75.75 0 0 1 0-1.06.75.75 0 0 1 1.06 0l3 3 3-3a.75.75 0 0 1 1.06 0c.29.29.29.77 0 1.06L5.53 5.69a.74.74 0 0 1-.53.22Z"
+                                fill="#9E9E9E"
+                            />
+                        </svg>
                     </div>
                 </div>
             </header>
-
+            <section class="coins">
+                <div class="coin-card">
+                    <div class="coin-card__header">
+                        <div class="coin-card__icon">
+                            <svg class="coin-card__svg">
+                                <use xlink:href="#bitcoin" />
+                            </svg>
+                        </div>
+                        <div class="coin-card__info">
+                            <h2 class="coin-card__name">Bitcoin</h2>
+                            <span class="coin-card__symbol">BTC</span>
+                        </div>
+                        <div class="coin-card__rate">
+                            <svg class="coin-card__arrow">
+                                <use xlink:href="#arrow-increase" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="coin-card__stats">
+                        <div class="coin-card__dollar">
+                            <span class="coin-card__dollar-now">$52.291</span>
+                            <span
+                                class="coin-card__dollar-change coin-card__dollar-change--increase"
+                                >+0.25%</span
+                            >
+                        </div>
+                        <div class="coin-card__graph">
+                            <img
+                                src="/images/graph1.png"
+                                alt="coin card changing graph"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="coin-card">
+                    <div class="coin-card__header">
+                        <div class="coin-card__icon">
+                            <svg class="coin-card__svg">
+                                <use xlink:href="#litecoin" />
+                            </svg>
+                        </div>
+                        <div class="coin-card__info">
+                            <h2 class="coin-card__name">Litecoin</h2>
+                            <span class="coin-card__symbol">LTC</span>
+                        </div>
+                        <div class="coin-card__rate">
+                            <svg class="coin-card__arrow">
+                                <use xlink:href="#arrow-increase" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="coin-card__stats">
+                        <div class="coin-card__dollar">
+                            <span class="coin-card__dollar-now">$8,291</span>
+                            <span
+                                class="coin-card__dollar-change coin-card__dollar-change--increase"
+                                >+0.25%</span
+                            >
+                        </div>
+                        <div class="coin-card__graph">
+                            <img
+                                src="/images/graph2.png"
+                                alt="coin card changing graph"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="coin-card">
+                    <div class="coin-card__header">
+                        <div class="coin-card__icon">
+                            <svg class="coin-card__svg">
+                                <use xlink:href="#ethereum" />
+                            </svg>
+                        </div>
+                        <div class="coin-card__info">
+                            <h2 class="coin-card__name">Ethereum</h2>
+                            <span class="coin-card__symbol">ETH</span>
+                        </div>
+                        <div class="coin-card__rate">
+                            <svg class="coin-card__arrow">
+                                <use xlink:href="#arrow-increase" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="coin-card__stats">
+                        <div class="coin-card__dollar">
+                            <span class="coin-card__dollar-now">$28,291</span>
+                            <span
+                                class="coin-card__dollar-change coin-card__dollar-change--increase"
+                                >+0.25%</span
+                            >
+                        </div>
+                        <div class="coin-card__graph">
+                            <img
+                                src="/images/graph1.png"
+                                alt="coin card changing graph"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="coin-card">
+                    <div class="coin-card__header">
+                        <div class="coin-card__icon">
+                            <svg class="coin-card__svg">
+                                <use xlink:href="#ethereum" />
+                            </svg>
+                        </div>
+                        <div class="coin-card__info">
+                            <h2 class="coin-card__name">Solana</h2>
+                            <span class="coin-card__symbol">SOL</span>
+                        </div>
+                        <div class="coin-card__rate">
+                            <svg class="coin-card__arrow coin-card__arrow--decrease">
+                                <use xlink:href="#arrow-decrease" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="coin-card__stats">
+                        <div class="coin-card__dollar">
+                            <span class="coin-card__dollar-now">$14,291</span>
+                            <span
+                                class="coin-card__dollar-change coin-card__dollar-change--decrease"
+                                >-0.25%</span
+                            >
+                        </div>
+                        <div class="coin-card__graph">
+                            <img
+                                src="/images/graph3.png"
+                                alt="coin card changing graph"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>

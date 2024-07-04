@@ -19,6 +19,7 @@ html {
 }
 button {
     background-color: transparent;
+    cursor: pointer;
 }
 
 /* Variables */
@@ -27,6 +28,8 @@ button {
     --color-dark-blue: #1B2028;
     --color-blue-gray: #31353F;
     --color-gray: #9E9E9E;
+    --color-green: #1ECB4F;
+    --color-red: #F46D22;
     --transation-time: 0.3s;
 }
 
@@ -89,6 +92,9 @@ body {
 .main {
     flex: 1;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 /* Header Style */
@@ -96,6 +102,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3rem;
 }
 .header__title {
     font-size: 3.2rem;
@@ -142,4 +149,84 @@ body {
     gap: 1.5rem;
     color: white;
     font-weight: 500;
+}
+
+/* Coins Section Style */
+.coins {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+.coin-card {
+    background-color: var(--color-dark-blue);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+.coin-card__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.coin-card__info {
+    flex: 1;
+}
+.coin-card__icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue-gray);
+    border-radius: 1rem;
+}
+.coin-card__svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.coin-card__name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+.coin-card__symbol {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--color-gray);
+}
+.coin-card__rate {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coin-card__arrow {
+    width: 1.05rem;
+    height: 0.573rem;
+}
+.coin-card__stats {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coin-card__dollar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.coin-card__dollar-now {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: white;
+}
+.coin-card__dollar-change {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.coin-card__dollar-change--increase {
+    color: var(--color-green)
+}
+.coin-card__dollar-change--decrease {
+    color: var(--color-red);
 }
