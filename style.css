@@ -258,6 +258,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
+    align-items: start;
 }
 .master-card {
     background-color: var(--color-blue);
