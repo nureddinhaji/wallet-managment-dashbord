@@ -32,11 +32,15 @@
             </symbol>
             <symbol id="arrow-increase" viewbox="0 0 12 6" fill="none">
                 <path
-                    d="M11.01 4.485 8.601 2.077 7.132.6a1.598 1.598 0 0 0-2.258 0L.99 4.485c-.51.51-.142 1.38.57 1.38H10.44c.72 0 1.08-.87.57-1.38Z" fill="#1ECB4F"
+                    d="M11.01 4.485 8.601 2.077 7.132.6a1.598 1.598 0 0 0-2.258 0L.99 4.485c-.51.51-.142 1.38.57 1.38H10.44c.72 0 1.08-.87.57-1.38Z"
+                    fill="#1ECB4F"
                 />
             </symbol>
             <symbol id="arrow-decrease" viewbox="0 0 12 6" fill="none">
-                <path d="M1 1.5 3.4 4l1.5 1.5c.6.6 1.6.6 2.2 0l4-3.9a.8.8 0 0 0-.7-1.4H1.6C.8.1.5 1.1 1 1.5Z" fill="#F46D22"/>
+                <path
+                    d="M1 1.5 3.4 4l1.5 1.5c.6.6 1.6.6 2.2 0l4-3.9a.8.8 0 0 0-.7-1.4H1.6C.8.1.5 1.1 1 1.5Z"
+                    fill="#F46D22"
+                />
             </symbol>
             <symbol id="litecoin" viewbox="0 0 24 24" fill="none">
                 <path
@@ -55,6 +59,9 @@
                     d="M20 3.5H5.5a1 1 0 0 0-.8.4l-1.5 2A1 1 0 0 0 4 7.5h14.5c.3 0 .6-.2.8-.4l1.5-2a1 1 0 0 0-.8-1.6ZM4 10h14.5c.3 0 .6.2.8.4l1.5 2A1 1 0 0 1 20 14H5.5a1 1 0 0 1-.8-.4l-1.5-2A1 1 0 0 1 4 10ZM20 16.5H5.5a1 1 0 0 0-.8.4l-1.5 2a1 1 0 0 0 .8 1.6h14.5c.3 0 .6-.1.8-.4l1.5-2a1 1 0 0 0-.8-1.6Z"
                     fill="#1ECB4F"
                 />
+            </symbol>
+            <symbol id="binance" viewbox="0 0 24 24" fill="none">
+                <path d="M11.7 2.4 6.4 7.6c-.2.2-.2.6 0 .8l1.2 1.2c.2.2.6.2.8 0l3.3-3.2c.2-.2.5-.2.7 0l3.3 3.2c.2.2.5.2.7 0l1.3-1.2c.2-.2.2-.6 0-.8l-5.3-5.2a.5.5 0 0 0-.8 0ZM11.7 21.6l-5.3-5.2a.5.5 0 0 1 0-.7l1.2-1.3c.2-.2.6-.2.8 0l3.3 3.2c.2.3.5.3.7 0l3.3-3.2c.2-.2.5-.2.7 0l1.3 1.3c.2.2.2.5 0 .7l-5.3 5.3c-.2.1-.6.1-.8 0ZM20.1 10.1l1.5 1.5c.2.2.2.6 0 .8l-1.5 1.5c-.2.2-.5.2-.7 0l-1.5-1.6a.5.5 0 0 1 0-.7l1.5-1.5c.2-.2.5-.2.7 0ZM4.6 10.1l1.5 1.5c.2.2.2.6 0 .8l-1.5 1.5c-.2.2-.5.2-.7 0l-1.5-1.6a.5.5 0 0 1 0-.7l1.5-1.5c.2-.2.5-.2.7 0Z" fill="#FFC01E"/><path d="m12.4 9.9 1.7 1.8c.2.2.2.5 0 .7L12.4 14c-.2.2-.6.2-.8 0L10 12.4a.5.5 0 0 1 0-.8l1.7-1.7c.2-.2.6-.2.8 0Z" fill="#FFC01E"/>
             </symbol>
         </svg>
         <!-- Sidebar -->
@@ -304,16 +311,16 @@
             <section class="coins">
                 <div class="section coin-card">
                     <div class="coin-card__header">
-                        <div class="coin-card__icon">
-                            <svg class="coin-card__svg">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
                                 <use xlink:href="#bitcoin" />
                             </svg>
                         </div>
-                        <div class="coin-card__info">
-                            <h2 class="coin-card__name">Bitcoin</h2>
+                        <div class="coin__info">
+                            <h2 class="coin__name">Bitcoin</h2>
                             <span class="coin-card__symbol">BTC</span>
                         </div>
-                        <div class="coin-card__rate">
+                        <div class="coin__rate">
                             <svg class="coin-card__arrow">
                                 <use xlink:href="#arrow-increase" />
                             </svg>
@@ -337,16 +344,16 @@
                 </div>
                 <div class="section coin-card">
                     <div class="coin-card__header">
-                        <div class="coin-card__icon">
-                            <svg class="coin-card__svg">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
                                 <use xlink:href="#litecoin" />
                             </svg>
                         </div>
-                        <div class="coin-card__info">
-                            <h2 class="coin-card__name">Litecoin</h2>
+                        <div class="coin__info">
+                            <h2 class="coin__name">Litecoin</h2>
                             <span class="coin-card__symbol">LTC</span>
                         </div>
-                        <div class="coin-card__rate">
+                        <div class="coin__rate">
                             <svg class="coin-card__arrow">
                                 <use xlink:href="#arrow-increase" />
                             </svg>
@@ -370,16 +377,16 @@
                 </div>
                 <div class="section coin-card">
                     <div class="coin-card__header">
-                        <div class="coin-card__icon">
-                            <svg class="coin-card__svg">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
                                 <use xlink:href="#ethereum" />
                             </svg>
                         </div>
-                        <div class="coin-card__info">
-                            <h2 class="coin-card__name">Ethereum</h2>
+                        <div class="coin__info">
+                            <h2 class="coin__name">Ethereum</h2>
                             <span class="coin-card__symbol">ETH</span>
                         </div>
-                        <div class="coin-card__rate">
+                        <div class="coin__rate">
                             <svg class="coin-card__arrow">
                                 <use xlink:href="#arrow-increase" />
                             </svg>
@@ -403,17 +410,19 @@
                 </div>
                 <div class="section coin-card">
                     <div class="coin-card__header">
-                        <div class="coin-card__icon">
-                            <svg class="coin-card__svg">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
                                 <use xlink:href="#ethereum" />
                             </svg>
                         </div>
-                        <div class="coin-card__info">
-                            <h2 class="coin-card__name">Solana</h2>
+                        <div class="coin__info">
+                            <h2 class="coin__name">Solana</h2>
                             <span class="coin-card__symbol">SOL</span>
                         </div>
-                        <div class="coin-card__rate">
-                            <svg class="coin-card__arrow coin-card__arrow--decrease">
+                        <div class="coin__rate">
+                            <svg
+                                class="coin-card__arrow coin-card__arrow--decrease"
+                            >
                                 <use xlink:href="#arrow-decrease" />
                             </svg>
                         </div>
@@ -440,7 +449,10 @@
                     <header class="master-card__header">
                         <h2 class="master-card__h2">Credit Card</h2>
                         <span class="master-card__Chip">
-                            <img src="/images/chip.png" alt="master card chip">
+                            <img
+                                src="/images/chip.png"
+                                alt="master card chip"
+                            />
                         </span>
                     </header>
                     <div class="master-card__no">3475 7381 3759 4512</div>
@@ -450,7 +462,84 @@
                     </footer>
                 </section>
                 <section class="section chart"></section>
-                <section class="section my-portfolio"></section>
+                <section class="section portfolio">
+                    <h2 class="section__title portfolio__h2">My Portfolio</h2>
+                    <div class="portfolio__coin">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
+                                <use xlink:href="#ethereum" />
+                            </svg>
+                        </div>
+                        <div class="coin__info">
+                            <h3 class="coin__name">Ethereum</h3>
+                            <span class="portfolio__dollar">$3,245.03</span>
+                        </div>
+                        <div class="portfolio__rate">
+                            <span class="portfolio__chang-percent portfolio__chang-percent--decrease">-13.40%</span>
+                            <span class="portfolio__change-amount">0.12543 ETH</span>
+                        </div>
+                    </div>
+                    <div class="portfolio__coin">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
+                                <use xlink:href="#bitcoin" />
+                            </svg>
+                        </div>
+                        <div class="coin__info">
+                            <h3 class="coin__name">Bitcoin</h3>
+                            <span class="portfolio__dollar">$3,245.03</span>
+                        </div>
+                        <div class="portfolio__rate">
+                            <span class="portfolio__chang-percent portfolio__chang-percent--decrease">-6.00%</span>
+                            <span class="portfolio__change-amount">0.12543 BTC</span>
+                        </div>
+                    </div>
+                    <div class="portfolio__coin">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
+                                <use xlink:href="#litecoin" />
+                            </svg>
+                        </div>
+                        <div class="coin__info">
+                            <h3 class="coin__name">Litecoin</h3>
+                            <span class="portfolio__dollar">$3,245.03</span>
+                        </div>
+                        <div class="portfolio__rate">
+                            <span class="portfolio__chang-percent portfolio__chang-percent--increase">+14.25%</span>
+                            <span class="portfolio__change-amount">0.12543 LTC</span>
+                        </div>
+                    </div>
+                    <div class="portfolio__coin">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
+                                <use xlink:href="#solana" />
+                            </svg>
+                        </div>
+                        <div class="coin__info">
+                            <h3 class="coin__name">Solana</h3>
+                            <span class="portfolio__dollar">$3,245.03</span>
+                        </div>
+                        <div class="portfolio__rate">
+                            <span class="portfolio__chang-percent portfolio__chang-percent--decrease">-2.00%</span>
+                            <span class="portfolio__change-amount">0.12543 SOL</span>
+                        </div>
+                    </div>
+                    <div class="portfolio__coin">
+                        <div class="coin__icon">
+                            <svg class="coin__svg">
+                                <use xlink:href="#binance" />
+                            </svg>
+                        </div>
+                        <div class="coin__info">
+                            <h3 class="coin__name">Binance Coin</h3>
+                            <span class="portfolio__dollar">$3,245.03</span>
+                        </div>
+                        <div class="portfolio__rate">
+                            <span class="portfolio__chang-percent portfolio__chang-percent--increase">+12.00%</span>
+                            <span class="portfolio__change-amount">0.12543 BNB</span>
+                        </div>
+                    </div>
+                </section>
                 <section class="section live-market"></section>
             </section>
         </main>

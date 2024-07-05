@@ -28,6 +28,7 @@ button {
     --color-dark-blue: #1B2028;
     --color-blue-gray: #31353F;
     --color-gray: #9E9E9E;
+    --color-gray-white: #E4E4E4;
     --color-green: #1ECB4F;
     --color-red: #F46D22;
     --transation-time: 0.3s;
@@ -46,11 +47,14 @@ body {
     width: 25.6rem;
     background-color: var(--color-dark-blue);
     min-height: 100vh;
+    max-height: 100vh;
+    position: sticky;
     padding: 3.2rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
     color: var(--color-gray);
+    top: 0;
 }
 .sidebar__nav {
     display: flex;
@@ -155,6 +159,14 @@ body {
     background-color: var(--color-dark-blue);
     border-radius: 1.5rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.section__title {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--color-gray-white);
 }
 
 /* Coins Section Style */
@@ -163,15 +175,18 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
 }
-.coin-card__header {
+.coin-card__header,.portfolio__coin {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.coin-card__info {
+.coin__info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
-.coin-card__icon {
+.coin__icon {
     width: 4.4rem;
     height: 4.4rem;
     display: flex;
@@ -180,11 +195,11 @@ body {
     background-color: var(--color-blue-gray);
     border-radius: 1rem;
 }
-.coin-card__svg {
+.coin__svg {
     width: 2.4rem;
     height: 2.4rem;
 }
-.coin-card__name {
+.coin__name {
     font-size: 1.6rem;
     font-weight: 600;
     color: white;
@@ -194,7 +209,7 @@ body {
     font-size: 1.2rem;
     color: var(--color-gray);
 }
-.coin-card__rate {
+.coin__rate {
     width: 1.8rem;
     height: 1.8rem;
     display: flex;
@@ -206,7 +221,6 @@ body {
     height: 0.573rem;
 }
 .coin-card__stats {
-    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,8 +294,35 @@ body {
     grid-column: span 2;
     grid-row: span 2;
 }
-.my-portfolio {
+.portfolio {
     grid-row: span 2;
+}
+.portfolio__dollar {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    opacity: 60%;
+}
+.portfolio__rate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+.portfolio__chang-percent {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.portfolio__chang-percent--increase {
+    color: var(--color-green)
+}
+.portfolio__chang-percent--decrease {
+    color: var(--color-red);
+}
+.portfolio__change-amount {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
 }
 .live-market {
     grid-column: span 2;
