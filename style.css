@@ -324,6 +324,65 @@ body {
     font-weight: 600;
     color: white;
 }
+
+
+/* Live Market (LM) Section */
 .live-market {
     grid-column: span 2;
+}
+.LM__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.LM__view-more {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-white);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-blue-gray);
+    opacity: 60%;
+}
+.LM-table tr {
+    display: flex;
+}
+.LM-table__body tr {
+    margin-top: 1rem;
+}
+.LM-table td {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.LM-table__heading td {
+    color: var(--color-gray);
+    font-size: 1.2rem;
+}
+.LM-table__body td {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.LM-table tr td:first-child {
+    flex: 1.5;
+}
+.LM-table tr td:last-child {
+    flex: 0;
+}
+.LM-table__symbol {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-inline-end: 1rem;
+}
+.LM-table__more {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+.LM-table .increase {
+    color: var(--color-green);
+}
+.LM-table .decrease {
+    color: var(--color-red);
 }
