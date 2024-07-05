@@ -151,16 +151,17 @@ body {
     font-weight: 500;
 }
 
+.section {
+    background-color: var(--color-dark-blue);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
 /* Coins Section Style */
 .coins {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
-}
-.coin-card {
-    background-color: var(--color-dark-blue);
-    border-radius: 1.5rem;
-    padding: 2rem;
+    gap: 3rem;
 }
 .coin-card__header {
     display: flex;
@@ -229,4 +230,59 @@ body {
 }
 .coin-card__dollar-change--decrease {
     color: var(--color-red);
+}
+
+/* User Sctions Style */
+
+.user-sections {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.master-card {
+    background-color: var(--color-blue);
+    background-image: url(/images/card-background.png);
+    background-size: cover;
+    background-blend-mode: color-burn;
+    color: white;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.master-card__header,.master-card__footer {
+    display: flex;
+    justify-content: space-between;
+}
+.master-card__h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    opacity: 60%;
+}
+.master-card__no {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+}
+.master-card__name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 60%;
+    text-transform: uppercase;
+}
+.master-card__type {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+
+}
+.chart {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.my-portfolio {
+    grid-row: span 2;
+}
+.live-market {
+    grid-column: span 2;
 }
